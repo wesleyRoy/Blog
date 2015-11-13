@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--create logo-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_radius"
+                android:src="@mipmap/logo"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <!--create account input box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号"
+                android:textColor="#ffffff"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/input_account"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/account"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="#FFFAFA"
+                android:hint="your account!"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <!--create password input box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textColor="#ffffff"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/password"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="#FFFAFA"
+                android:hint="your password!"
+                android:singleLine="true"
+                android:inputType="textPassword" />
+        </RelativeLayout>
+
+        <!--create login button-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:paddingTop="25dp"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp"
+                android:text="登录系统"
+                android:textColor="#fff"
+                android:background="#a00"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="弹出对话框"
+                android:textColor="#fff"
+                android:background="#a00"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/select_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp"
+                android:text="提示信息"
+                android:textColor="#fff"
+                android:background="#a00"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
